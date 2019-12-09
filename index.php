@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <?php include 'head.php' ?>
+    <?php include 'include/head.php' ?>
     <title>Gakkari Posts</title>
   </head>
   <body>
     <div class="container">
     
-      <?php include "header.php" ?>
+      <?php include '_header.php' ?>
       
       <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
@@ -160,7 +160,7 @@
 
     </main><!-- /.container -->
 
-    <?php include "footer.php" ?>
+    <?php include '_footer.php' ?>
 
   </body>
 </html>

@@ -1,0 +1,40 @@
+[
+    {
+        "name": "nadar/quill-delta-parser",
+        "version": "2.4.0",
+        "version_normalized": "2.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nadar/quill-delta-parser.git",
+            "reference": "8a572a1c36020dc5b3a35f6231a27f1ca7e53ac4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nadar/quill-delta-parser/zipball/8a572a1c36020dc5b3a35f6231a27f1ca7e53ac4",
+            "reference": "8a572a1c36020dc5b3a35f6231a27f1ca7e53ac4",
+            "shasum": ""
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7.3"
+        },
+        "time": "2019-11-02T15:32:57+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "nadar\\quill\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Basil Suter",
+                "email": "git@nadar.io"
+            }
+        ],
+        "description": "A PHP library to parse Quill Deltas into HTML"
+    }
+]

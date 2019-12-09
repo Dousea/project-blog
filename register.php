@@ -1,6 +1,6 @@
 <?php
   // Include config file
-  require_once 'link.php';
+  require_once 'include/link.php';
   
   // Define variables and initialize with empty values
   $fullname = $username = $password = $confirm_password = '';
@@ -88,7 +88,7 @@
         // Attempt to execute the prepared statement
         if (mysqli_stmt_execute($stmt)) {
           // Redirect to login page
-          header('location: index.php');
+          header('location: login.php');
         } else{
           echo 'Something went wrong. Please try again later.';
         }
@@ -103,12 +103,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <?php include 'head.php' ?>
-    <title>Register - Gakkari Posts</title>
+    <?php include 'include/head.php' ?>
+    <title>Sign Up - Gakkari Posts</title>
   </head>
   <body>
     <div class="container">
-      <?php include 'header.php' ?>
+      <?php include '_header.php' ?>
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" novalidate>
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
@@ -141,12 +141,12 @@
           <div class="invalid-feedback"><?php echo $err['confirm_password']; ?></div>
         </div>
         <div class="form-group">
-          <input type="submit" class="btn btn-primary" value="Submit">
+          <input type="submit" class="btn btn-primary" value="Sign up">
           <input type="reset" class="btn btn-default" value="Reset">
         </div>
-        <p>Already have an account? <a href="login.php">Login here</a>.</p>
+        <p>Already have an account? <a href="login.php">Sign in here</a>.</p>
       </form>
-      <?php include 'footer.php' ?>
+      <?php include '_footer.php' ?>
     </div>
   </body>
 </html>
